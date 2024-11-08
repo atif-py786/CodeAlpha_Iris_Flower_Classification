@@ -4,6 +4,8 @@
 
 This project focuses on classifying iris flowers into three species (Setosa, Versicolor, and Virginica) based on sepal and petal dimensions. The Iris dataset is widely used in machine learning for classification problems, making it an ideal choice for practicing data analysis, feature engineering, and classification model building.
 
+---
+
 ## Dataset Information
 
 The **Iris dataset** contains 150 samples of iris flowers, with the following features:
@@ -15,20 +17,6 @@ The **Iris dataset** contains 150 samples of iris flowers, with the following fe
 - **Species**: The species of the iris flower (Setosa, Versicolor, Virginica)
 
 The dataset is small yet insightful, with clearly distinguishable classes, making it suitable for practicing classification.
-
----
-
-## Project Workflow
-
-The project workflow follows a structured approach:
-
-1. **Data Collection & Loading**: Load the dataset and check for missing or inconsistent data.
-2. **Data Exploration & Visualization**: Explore data relationships and identify potential patterns.
-3. **Data Preprocessing**: Clean, scale, and prepare data for modeling.
-4. **Feature Selection**: Identify key features for efficient classification.
-5. **Model Building**: Develop and compare multiple machine learning models.
-6. **Model Evaluation**: Evaluate models using metrics such as accuracy, precision, and recall.
-7. **Conclusions & Insights**: Draw insights from the model and project results.
 
 ---
 
@@ -44,24 +32,18 @@ The EDA phase is essential to understand data distributions and relationships:
 These visualizations provided initial insights into how features like petal length and petal width are more effective in differentiating species.
 
 ---
+## Splitting the Data
 
-## Feature Engineering
-
-Feature engineering involved the following:
-
-1. **Feature Scaling**: Standardized features to ensure all are on the same scale.
-2. **Feature Selection**: Although all features were used, emphasis was placed on petal length and width, which were most significant for classification based on the visual separability observed during EDA.
-
----
+The dataset is divided into training and testing sets using train_test_split. A test size of 20% is specified to evaluate the model's performance on unseen data. A fixed random_state ensures reproducibility.
 
 ## Model Building
 
 Several classification models were tested to compare their performance:
 
-1. **Logistic Regression**: Used as a baseline model for its simplicity and interpretability.
-2. **K-Nearest Neighbors (KNN)**: Tested multiple `k` values to find optimal neighbors for classification accuracy.
-3. **Decision Tree Classifier**: Built with various depths, providing intuitive branching logic that fits well with this dataset.
-4. **Support Vector Classifier (SVC)**: Explored linear and non-linear kernels to enhance decision boundaries.
+1. **Logistic Regression**
+2. **K-Nearest Neighbors (KNN)**
+3. **Decision Tree Classifier**
+4. **Support Vector Classifier (SVC)**
 
 ---
 
